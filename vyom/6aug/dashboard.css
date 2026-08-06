@@ -12,7 +12,7 @@
     padding-top: 50px;
     padding-left: 10px;
     width:  160px;
-    height:100dvh;
+    height:100vh;
     
 }
 .sidebar a{
@@ -30,6 +30,7 @@
 .main{
     position:relative;
     width: 100%;
+    display: block;
 }
 .main nav{
     background-color: azure;
@@ -38,4 +39,37 @@
     padding-top: 5px;
     padding-left: 10px;
     border: solid black 3px;
+}
+.main2{
+    position: relative;
+    width: 100%;
+}
+.top-div{
+    width: 100%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+}
+.left-top-div{
+    display:grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    background-color: darkgray;
+    margin: 10px;
+}
+.box-left-top-div{
+    background-color: cornsilk;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    aspect-ratio: 1 / 1;
+    
+}
+.right-top-div{
+    position: relative;
+    padding: 20px;
+    background-color: grey;
+    margin: 10px;
 }
