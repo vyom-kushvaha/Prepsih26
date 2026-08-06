@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.all{
+    display: flex;
+}
+.sidebar{
+    background-color: rgba(18, 17, 17, 0.888);
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 10px;
+    width:  160px;
+    height:100dvh;
+    
+}
+.sidebar a{
+    display: block;
+    color: crimson;
+    font-size: larger;
+    text-decoration: none;
+    padding: 3px;
+}
+.sidebar a:hover{
+    color: aliceblue;
+    background-color:crimson;
+    
+}
+.main{
+    position:relative;
+    width: 100%;
+}
+.main nav{
+    background-color: azure;
+    height: 45px;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    border: solid black 3px;
+}
