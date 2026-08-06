@@ -1,75 +1,156 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.all{
+
+body {
+    background-color: #f4f7fa; /* Light grey background for the whole page */
+    color: #333;
+}
+
+.all {
     display: flex;
 }
-.sidebar{
-    background-color: rgba(18, 17, 17, 0.888);
-    margin: 0;
-    padding-top: 50px;
-    padding-left: 10px;
-    width:  160px;
-    height:100vh;
-    
+
+/* --- SIDEBAR --- */
+.sidebar {
+    background-color: #262e3d; /* Dark navy/slate from the image */
+    width: 220px;
+    height: 100vh;
+    padding-top: 20px;
 }
-.sidebar a{
+
+.logo-area {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 20px 30px 20px;
+}
+
+.logo-icon {
+    color: #ff5252;
+}
+
+.nav-heading {
+    color: #5c677d;
+    font-size: 12px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+}
+
+.sidebar a {
     display: block;
-    color: crimson;
-    font-size: larger;
+    color: #9ba4b5;
+    font-size: 14px;
     text-decoration: none;
-    padding: 3px;
+    padding: 12px 20px;
+    transition: all 0.2s ease;
 }
-.sidebar a:hover{
-    color: aliceblue;
-    background-color:crimson;
-    
+
+.sidebar a:hover, .sidebar a.active {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid #ff5252;
 }
-.main{
-    position:relative;
-    width: 100%;
+
+/* --- MAIN CANVAS --- */
+.main {
+    width: calc(100% - 220px);
     display: block;
 }
-.main nav{
-    background-color: azure;
-    height: 45px;
-    width: 100%;
-    padding-top: 5px;
-    padding-left: 10px;
-    border: solid black 3px;
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 30px;
+    background-color: transparent;
 }
-.main2{
-    position: relative;
-    width: 100%;
+
+nav h2 {
+    font-weight: 400;
+    color: #333;
 }
-.top-div{
-    width: 100%;
-    margin: 20px;
-    display: grid;
-    grid-template-columns: 1fr 2fr; 
-}
-.left-top-div{
-    display:grid;
-    gap: 20px;
-    padding: 20px;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(2, 1fr);
-    background-color: darkgray;
-    margin: 10px;
-}
-.box-left-top-div{
-    background-color: cornsilk;
-    color: black;
-    padding: 20px;
+
+/* --- REUSABLE CARD STYLING --- */
+.card-style {
+    background-color: #ffffff;
     border-radius: 8px;
-    aspect-ratio: 1 / 1;
-    
-}
-.right-top-div{
-    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
     padding: 20px;
-    background-color: grey;
-    margin: 10px;
+}
+
+/* --- TOP SECTION --- */
+.top-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split equally between KPIs and Graph */
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.left-top-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.box-left-top-div {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-left-top-div:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.card-title {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card-value {
+    font-size: 24px;
+    color: #222;
+}
+
+/* --- BOTTOM SECTION --- */
+.bottom-div {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr; /* Table takes up more space */
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.data-table th {
+    text-align: left;
+    color: #888;
+    font-size: 12px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.data-table td {
+    padding: 15px 0;
+    font-size: 14px;
+    color: #555;
+    border-bottom: 1px solid #fafafa;
 }
