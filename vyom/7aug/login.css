@@ -32,9 +32,83 @@ body{
     height: 500px;
     width: 350px;
     border: solid black 1px;
+
     align-items: center;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
     
 }
+#logo-login{
+    color: white;
+    font-size: x-large;
+    margin-bottom: 60px;
+    margin-top: -60px;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    word-spacing: 15px;
+}
+#welcome{
+    margin-bottom: -15px;
+    margin-left: -140px;
 
+    color: black;
+    font-size: small;
+}
+
+.form-field{
+    height: 45px;
+    width: 250px;
+}
+input[type="text"]::placeholder {
+    line-height: 40px; 
+    font-weight: bold;
+    padding: 0px 10px;
+    font-size: larger;
+}
+#submit{
+    font-weight: bold;
+    padding: 0px 10px;
+    font-size:larger;
+    background-color: #25343F;  
+    color: white; 
+}
+#submit:hover{
+    transform: scale(1.04) ;
+}
+#forget{
+    color:whitesmoke;
+    font-size: small;
+    margin-top: -15px;
+    margin-left: -90px;
+}
+#forget:hover{
+    color: black;
+}
+#google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#google:hover{
+    transform: scale(1.03);
+    background-color:#25343f;
+    color: white;
+}
+
+
+#google img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+#google p{
+    margin: 0;
+}
