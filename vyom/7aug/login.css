@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #25343F;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.left-main{
+    width: 40%;
+    background: #25343F;
+    color: #EAEFEF;
+}
+
+.right-main{
+    width: 60%;
+    background: #EAEFEF;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#login-div{
+    background-color: #FF9B51;
+    justify-content: center;
+    height: 500px;
+    width: 350px;
+    border: solid black 1px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
