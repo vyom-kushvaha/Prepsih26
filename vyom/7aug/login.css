@@ -15,8 +15,40 @@ body{
 
 .left-main{
     width: 40%;
-    background: #25343F;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d2b36 0%, #304755 100%);
     color: #EAEFEF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+#logo-name{
+    position: relative;
+    z-index: 1;
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+#description{
+    position: relative;
+    z-index: 1;
+    max-width: 430px;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(234, 239, 239, 0.92);
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-left: 4px solid #FAB12F;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
 }
 
 .right-main{
