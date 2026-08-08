@@ -33,7 +33,6 @@
       font-size: 22px;
       font-weight: bold;
       margin-bottom: 40px;
-      padding-left: 10px;
     }
 
     .nav-item {
@@ -43,7 +42,6 @@
       padding: 13px;
       margin-bottom: 6px;
       border-radius: 8px;
-      font-size: 14px;
     }
 
     .nav-item.active {
@@ -58,7 +56,65 @@
 
     .main {
       margin-left: 250px;
-      padding: 35px;
+      min-height: 100vh;
+    }
+
+    .topbar {
+      height: 85px;
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+    }
+
+    .heading h1 {
+      font-size: 23px;
+    }
+
+    .heading p {
+      color: #6b7280;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search {
+      width: 200px;
+      padding: 10px;
+      border: 1px solid #e5e7eb;
+      border-radius: 7px;
+      outline: none;
+    }
+
+    .notification {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #e5e7eb;
+      background: white;
+      border-radius: 7px;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #e0e7ff;
+      color: #3730a3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .content {
+      padding: 30px;
     }
   </style>
 </head>
@@ -67,9 +123,7 @@
 
   <aside class="sidebar">
 
-    <div class="logo">
-       DashPro
-    </div>
+    <div class="logo"> DashPro</div>
 
     <a href="#" class="nav-item active"> Dashboard</a>
     <a href="#" class="nav-item"> Customers</a>
@@ -82,8 +136,32 @@
 
   <main class="main">
 
-    <h1>Dashboard</h1>
-    <p>Welcome to your dashboard.</p>
+    <header class="topbar">
+
+      <div class="heading">
+        <h1>Dashboard</h1>
+        <p>Welcome back, Vyom ! Here's what's happening today.</p>
+      </div>
+
+      <div class="top-actions">
+
+        <input
+          class="search"
+          type="text"
+          placeholder="Search..."
+        >
+
+        <button class="notification"></button>
+
+        <div class="avatar">JP</div>
+
+      </div>
+
+    </header>
+
+    <div class="content">
+      <h2>Dashboard Overview</h2>
+    </div>
 
   </main>
 
