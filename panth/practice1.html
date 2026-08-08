@@ -18,27 +18,74 @@
       color: #111827;
     }
 
-    .app {
-      padding: 40px;
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      background: #111827;
+      color: white;
+      padding: 25px 16px;
     }
 
-    h1 {
-      font-size: 30px;
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      padding-left: 10px;
     }
 
-    p {
-      color: #6b7280;
-      margin-top: 8px;
+    .nav-item {
+      display: block;
+      text-decoration: none;
+      color: #9ca3af;
+      padding: 13px;
+      margin-bottom: 6px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .nav-item.active {
+      background: #4f46e5;
+      color: white;
+    }
+
+    .nav-item:hover {
+      background: #1f2937;
+      color: white;
+    }
+
+    .main {
+      margin-left: 250px;
+      padding: 35px;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="app">
-    <h1>DashPro Dashboard</h1>
-    <p>Dashboard project initialized.</p>
-  </div>
+  <aside class="sidebar">
+
+    <div class="logo">
+       DashPro
+    </div>
+
+    <a href="#" class="nav-item active"> Dashboard</a>
+    <a href="#" class="nav-item"> Customers</a>
+    <a href="#" class="nav-item"> Orders</a>
+    <a href="#" class="nav-item"> Analytics</a>
+    <a href="#" class="nav-item"> Settings</a>
+    <a href="#" class="nav-item"> Help Center</a>
+
+  </aside>
+
+  <main class="main">
+
+    <h1>Dashboard</h1>
+    <p>Welcome to your dashboard.</p>
+
+  </main>
 
 </body>
 </html>
