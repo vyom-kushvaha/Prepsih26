@@ -207,6 +207,59 @@
   font-size: 9px;
 }
 
+.sales-card {
+  background: white;
+  padding: 22px;
+  margin-top: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.donut {
+  width: 160px;
+  height: 160px;
+  margin: 25px auto;
+  border-radius: 50%;
+  background: conic-gradient(
+    #4f46e5 0 42%,
+    #3b82f6 42% 70%,
+    #f97316 70% 88%,
+    #d1d5db 88%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donut-center {
+  width: 105px;
+  height: 105px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.donut-center strong {
+  font-size: 17px;
+}
+
+.donut-center span {
+  color: #6b7280;
+  font-size: 9px;
+  margin-top: 4px;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-top: 1px solid #f1f5f9;
+  font-size: 11px;
+}
+
   </style>
 </head>
 
@@ -274,59 +327,103 @@
 
       </section>
 
+  <section class="chart-card">
+
+    <div class="card-header">
+
+      <div>
+        <h2>Revenue Overview</h2>
+        <p>Monthly revenue performance</p>
+      </div>
+
+      <button>2026 ▾</button>
+
     </div>
 
-    <section class="chart-card">
+    <div class="chart">
 
-         <div class="card-header">
-             <h2>Revenue Overview</h2>
-             <p>Monthly revenue performance</p>
-         </div>
+      <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
 
-         <button>2026 ▾</button>
+        <polyline
+          points="
+          0,220
+          100,180
+          200,195
+          300,140
+          400,160
+          500,100
+          600,125
+          700,70
+          800,90
+          900,45
+          1000,20
+          "
+        />
+
+      </svg>
+
+    </div>
+
+    <div class="months">
+      <span>Jan</span>
+      <span>Feb</span>
+      <span>Mar</span>
+      <span>Apr</span>
+      <span>May</span>
+      <span>Jun</span>
+      <span>Jul</span>
+      <span>Aug</span>
+      <span>Sep</span>
+      <span>Oct</span>
+      <span>Nov</span>
+      <span>Dec</span>
+    </div>
+
+  </section>
+
+<section class="sales-card">
+
+  <div class="card-header">
+
+    <div>
+      <h2>Sales by Category</h2>
+      <p>Current month</p>
+    </div>
 
   </div>
 
-  <div class="chart">
+  <div class="donut">
 
-    <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
-
-      <polyline
-        points="
-        0,220
-        100,180
-        200,195
-        300,140
-        400,160
-        500,100
-        600,125
-        700,70
-        800,90
-        900,45
-        1000,20
-        "
-      />
-
-    </svg>
+    <div class="donut-center">
+      <strong>$48.2k</strong>
+      <span>Total Sales</span>
+    </div>
 
   </div>
 
-  <div class="months">
-    <span>Jan</span>
-    <span>Feb</span>
-    <span>Mar</span>
-    <span>Apr</span>
-    <span>May</span>
-    <span>Jun</span>
-    <span>Jul</span>
-    <span>Aug</span>
-    <span>Sep</span>
-    <span>Oct</span>
-    <span>Nov</span>
-    <span>Dec</span>
+  <div class="category">
+    <span>🟣 Software</span>
+    <strong>42%</strong>
   </div>
 
-    </section>
+  <div class="category">
+    <span>🔵 Services</span>
+    <strong>28%</strong>
+  </div>
+
+  <div class="category">
+    <span>🟠 Hardware</span>
+    <strong>18%</strong>
+  </div>
+
+  <div class="category">
+    <span>⚪ Other</span>
+    <strong>12%</strong>
+  </div>
+
+</section>
+
+    </div>
 
   </main>
 
